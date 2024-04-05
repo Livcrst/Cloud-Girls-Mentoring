@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio IMC de Lógica</title>
+</head>
+<body>
+    
+    <script>
+
+
+        function pular_linha (){
+
+            documet.write('<br>');
+
+        }
+
+        function mostrarMensagem(mensagem){
+
+            document.write(mensagem);
+
+        }
+
+        function calcularIMC(peso, altura){
+
+            var imc = peso / (altura * altura);
+            mostrarMensagem("O imc é: " + imc.toFixed(2));
+            // .toFixed serve para arredondar casas decimais, igual a quando usamos Math.arround
+
+        }
+
+        calcularIMC(97,1.57);
+
+
+
+    </script>
+</body>
+</html>
