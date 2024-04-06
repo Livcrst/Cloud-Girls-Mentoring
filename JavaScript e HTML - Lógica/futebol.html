@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      function mostrarMensagem(mensagem) {
+        document.write(mensagem);
+      }
+
+      var vitorias = parseFloat(prompt("Digite o numero de vitorias:"));
+      var empates = parseFloat(prompt("Digite o numero de empates:"));
+612525
+      // 1 vitorias vale 3 pontos e 1 emparte vale 1 ponto
+      var pontos = vitorias * 3 + empates * 1;
+      // Toda entrada inserida pela função prompt é um texto, mas o js converte por baixo dos panos,
+      //  caso seja uma string de numero converte como numero;
+      alert("O numero de pontos do time é: "+pontos)
+
+      if (pontos > 28){
+        mostrarMensagem("Parabéns, seu time está melhor do que no ano passado!");
+      }
+      if (pontos < 28){
+        mostrarMensagem("Que pena, seu time está pior do que no ano passado!");
+      }
+      if (pontos == 28){
+        mostrarMensagem("Parabéns, seu time está igual ao que no ano passado!");
+      }
+    </script>
+  </body>
+</html>

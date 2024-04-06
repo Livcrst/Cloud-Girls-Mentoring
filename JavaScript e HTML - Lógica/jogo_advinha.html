@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Advinhação</title>
+</head>
+<body>
+    <script>
+        function pular_linha() {
+
+            document.write('<br>');
+            document.write('<br>');
+            
+        }
+        function mostrar(frase){
+            document.write(frase);
+            pular_linha();
+        }
+        function sorteia(n) {
+
+            return Math.round(Math.random() * n);
+        } 
+        var numeropensado = Math.round(sorteia(10));
+        var chute = parseInt(prompt("Digite seu chute: "));
+
+        if (chute == numeropensado) {
+            mostrar("Parabéns, você acertou!");
+        } else if (chute != numeropensado) {
+            mostrar("Você errou! <br> O numero pensado foi: "+numeropensado);
+        }
+    </script>
+</body>
+</html>
