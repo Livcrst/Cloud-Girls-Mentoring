@@ -1,0 +1,16 @@
+/* Cascate Stylle Sheet */
+body{
+    background-color: #040422;
+    font-family: Arial, sans-serif;
+}
+main h1{
+    color: white;
+    font-size: 40px;
+}
+main h1 strong{
+    color:aqua;
+}
+main p{
+    color: white;
+    font-size: 20px;
+}
