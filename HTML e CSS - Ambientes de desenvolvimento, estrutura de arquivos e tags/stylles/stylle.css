@@ -1,7 +1,14 @@
 /* Cascate Stylle Sheet */
 body{
+    height: 100vh; /*Esse vh é referente a altura da viewport, a viewport é a porção de área visível de um plano e é utilizada como unidade de medida no CSS para criar páginas Web 100% responsivas.*/
+    box-sizing: border-box;
     background-color: #040422;
     font-family: Arial, sans-serif;
+   
+} 
+.apresentacao{
+    display: flex;
+    align-items: center;
 }
 main h1{
     color: white;
@@ -13,4 +20,8 @@ main h1{
 main p{
     color: white;
     font-size: 20px;
+}
+main img{
+    width: 400px;
+    height: 500;
 }
