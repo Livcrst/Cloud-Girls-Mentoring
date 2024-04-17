@@ -7,7 +7,7 @@ main h1{
     color: white;
     font-size: 40px;
 }
-main h1 strong{
+.Destaque {
     color:aqua;
 }
 main p{
