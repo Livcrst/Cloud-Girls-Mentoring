@@ -1,11 +1,40 @@
 /* Cascate Stylle Sheet */
+:root{
+
+    --color-primary: #22D4FD;
+    --color-secundary: #040422;
+    --color-tertiary: #f6f6f6;
+    --color-hover: #272727
+}
 body{
     height: 100vh; /*Esse vh é referente a altura da viewport, a viewport é a porção de área visível de um plano e é utilizada como unidade de medida no CSS para criar páginas Web 100% responsivas.*/
     box-sizing: border-box;
-    background-color: #040422;
+    background-color: var(--color-secundary
+    );
     font-family: Arial, sans-serif;
    
 } 
+header{
+
+    padding: 2% 0 0 15%;
+
+}
+
+.nav-bar{
+    display: flex;
+    gap: 80px;
+}
+.nav-bar a {
+
+    font-family: 'Monteserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+
+    color: var(--color-primary);
+    text-decoration: none;
+
+
+}
 .apresentacao{
     padding: 10% 15%;
     display: flex;
@@ -20,16 +49,16 @@ body{
 }
 
 main h1{
-    color: white;
+    color: var(--color-tertiary);
     font-size: 40px;
 
     font-family: 'Krona One', sans-serif;
 }
 .Destaque {
-    color:aqua;
+    color: var(--color-primary);
 }
 main p{
-    color: white;
+    color: var(--color-tertiary);
     font-size: 24px;
 
     font-family: 'Monteserrat', sans-serif;
@@ -43,7 +72,7 @@ main p{
     gap: 32px;
 }
 .butons h2{
-    color: white;
+    color: var(--color-tertiary);
     font-size: 24px;
 
     font-family: 'Krona One', sans-serif;
@@ -52,11 +81,11 @@ main p{
 
 
     /* background-color: #22D4FD ; */
-    color: white;
+    color: var(--color-tertiary);
     width: 328px;
     text-align: center;
     text-decoration: none;
-    border: 2px solid #22D4FD; ;
+    border: 2px solid var(--color-primary); ;
     border-radius: 10px;
     font-size: 24px;
     font-weight: bold;
@@ -74,7 +103,7 @@ main p{
     height: 30px;
 }
 .buton__link:hover {
-    background-color: #272727;
+    background-color: var(--color-hover);
 }
 main img{
     width: 300px;
@@ -87,6 +116,6 @@ footer{
     font-size: 24px;
     font-weight: 400;
     font-family: 'Monteserrat',sans-serif;
-    background-color: #22D4FD;
+    background-color: var(--color-primary);
 
 }
