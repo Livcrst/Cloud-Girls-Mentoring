@@ -7,21 +7,53 @@ body{
    
 } 
 .apresentacao{
+    margin: 10% 15%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
+.apresentacao__texto{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /*serve para dar um espaço entre os elementos */
+}
+
 main h1{
     color: white;
     font-size: 40px;
+
+    font-family: 'Krona One', sans-serif;
 }
 .Destaque {
     color:aqua;
 }
 main p{
     color: white;
-    font-size: 20px;
+    font-size: 24px;
+
+    font-family: 'Monteserrat', sans-serif;
+}
+.butons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buton__link{
+
+
+    background-color: #22D4FD ;
+    width: 280px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 21.5px 0;
+
+
 }
 main img{
-    width: 400px;
-    height: 500;
+    width: 300px;
+    height: 400;
 }
