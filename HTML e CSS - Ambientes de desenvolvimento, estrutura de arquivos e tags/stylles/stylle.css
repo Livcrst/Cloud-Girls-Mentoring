@@ -3,6 +3,30 @@
 /* Existem as unidades de medidas absolutas que são px, ml, etc */
 /* E existem unidades de medidas que são relativas como por exemplo   */
 /* Entre as unidades relativas, temos o rem. 1 rem equivalem a 16px. */
+/* A unidade de porcentagem tem a unidade relativa ao elemento pai */
+@media screen and (max-width: 1200px){
+    
+    .apresentacao{
+        flex-direction: 
+        column-reverse;
+
+        padding: 5%;
+
+    }
+
+    .apresentacao__texto{
+        width: auto;
+    }
+    header{
+
+        padding: 10%;
+        
+    }
+    .nav-bar{
+        justify-content: center;
+    }
+
+}
 :root{
 
     --color-primary: #22D4FD;
@@ -44,9 +68,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 3rem
+    ;
 }
 .apresentacao__texto{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px; /*serve para dar um espaço entre os elementos */
@@ -86,7 +112,7 @@ main p{
 
     /* background-color: #22D4FD ; */
     color: var(--color-tertiary);
-    width: 328px;
+    width: 50%;
     text-align: center;
     text-decoration: none;
     border: 2px solid var(--color-primary); ;
@@ -110,7 +136,7 @@ main p{
     background-color: var(--color-hover);
 }
 main img{
-    width: 300px;
+    width: 50%;
     height: 400;
 }
 footer{
