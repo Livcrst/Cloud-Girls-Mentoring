@@ -1,0 +1,11 @@
+@import url("/HTML\ e\ CSS\ -\ Mobile\ First/alurabooks/styles/header.css"); /* importar outra folha de estilo, dessa forma não precisa ficar chamando  no index um monte de link html  */
+:root{
+
+    --cor-de-fundo: #ebecee;
+    --branco: #fff;
+
+}
+body{
+
+    background-color: var(--cor-de-fundo);
+}
