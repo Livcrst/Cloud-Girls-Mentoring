@@ -1,30 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraBooks </title>
-    <link rel="stylesheet" href="/HTML e CSS - Mobile First/alurabooks/styles/styles.css">
-    <link rel="stylesheet" href="/HTML e CSS - Mobile First/alurabooks/styles/reset.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraBooks</title>
+    <link
+      rel="stylesheet"
+      href="/HTML e CSS - Mobile First/alurabooks/styles/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/HTML e CSS - Mobile First/alurabooks/styles/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Import da font do google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="cabecalho">
-        <div class="container">
-            <span class="cabecalho__menu-hamburger container__img">  
-            </span>
-            <img src="/HTML e CSS - Mobile First/alurabooks/img/Logo.svg" alt="Logo alura books">
-           
-        </div>
+      <div class="container">
+        <input type="checkbox" id="menu" class="container__botao" />
+        <label for="menu">
+          <!-- Esta parte associa o span ao clique do botao para funcionar nosso menu sanduiche-->
+          <span class="cabecalho__menu-hamburger container__img">
+            <!-- aqui temos duas classes-->
+          </span>
+        </label>
+        <!-- Lista não ordenada -->
+        <ul class="lista-menu__texto">
+          <li class="lista-menu__categorias">Categorias</li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Frontend</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Programação</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Infraestrutura</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Business</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">UX & Design</a>
+          </li>
+        </ul>
+        <img
+          src="/HTML e CSS - Mobile First/alurabooks/img/Logo.svg"
+          alt="Logo alura books"
+        />
+      </div>
 
-        <div class="container">
-            <a href="#"><img src="/HTML e CSS - Mobile First/alurabooks/img/Favoritos.svg" alt="favoritos" class="container__img"></a>
-            <a href="#"><img src="/HTML e CSS - Mobile First/alurabooks/img/Compras.svg" alt="compras" class="container__img"></a>
-            <a href="#"><img src="/HTML e CSS - Mobile First/alurabooks/img/Usuário.svg" alt="usuario" class="container__img"></a>
-        </div>
-
+      <div class="container">
+        <a href="#"
+          ><img
+            src="/HTML e CSS - Mobile First/alurabooks/img/Favoritos.svg"
+            alt="favoritos"
+            class="container__img"
+        /></a>
+        <a href="#"
+          ><img
+            src="/HTML e CSS - Mobile First/alurabooks/img/Compras.svg"
+            alt="compras"
+            class="container__img"
+        /></a>
+        <a href="#"
+          ><img
+            src="/HTML e CSS - Mobile First/alurabooks/img/Usuário.svg"
+            alt="usuario"
+            class="container__img"
+        /></a>
+      </div>
     </header>
+    <section class="baner">
+      <h2 class="baner__titulo">Já sabe por onde começar?</h2>
+      <p class="baner__texto">
+        Encontre em nossa estante o que precisa para seu desenvolvimento!
+      </p>
+      <input
+        type="search"
+        class="baner__pesquisa"
+        placeholder="Qual será sua próxima leitura?"
+      />
+    </section>
+    <section class="carrossel">
+      <h2 class="carrossel__titulo">Novos lançamentos</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              src="/HTML e CSS - Mobile First/alurabooks/img/books img/ApacheKafka.svg"
+              alt="Livro Alura sobre Apache Kafta."
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/HTML e CSS - Mobile First/alurabooks/img/books img/Javascript.svg"
+              alt="Livro Alura sobre Javascript."
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/HTML e CSS - Mobile First/alurabooks/img/books img/Liderança.svg"
+              alt="Livro Alura sobre Liderança e Gestão."
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/HTML e CSS - Mobile First/alurabooks/img/books img/Portugol.svg"
+              alt="Livro Alura sobre Portugol para iniciantes em lógica de programação."
+            />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-    
-    
-</body>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      });
+    </script>
+  </body>
 </html>

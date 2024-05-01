@@ -1,18 +1,18 @@
 .cabecalho{
 
-    background-color: var(--branco);
+    background-color: var(--branco); 
+    /* background-color: black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
 }
 
 .cabecalho__menu-hamburger{
     
-    /* width: 1.5rem; */
-    /* height: 1.5rem; */
-    width: 24px;
-    height: 24px;
+    width: 1.5rem; 
+    height: 1.5rem; 
     background-image: url("../img/Menu.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -22,4 +22,44 @@
 .container{
     display: flex;
     align-items: center;
+}
+.container__img{
+
+    padding: 1em;
+    
+}
+.lista-menu__texto{
+    display: none;
+    position: absolute; /* Para poder movimentar livremente o elemento de acordo com uma porcetagem, isso vai fazer como que consigamos movimentar de acordo com o elemento pai */
+    top: 100%;
+    width: 60vw;
+}
+
+
+.container__botao:checked~.lista-menu__texto{
+    /* Isto faz o menu sumir e aparecer ao verificar se algo esta selecionado ou não */
+    display: block;
+}
+.container__botao{
+    display: none;
+}
+.lista-menu__categorias, 
+.lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+.lista-menu__categorias{
+
+    color: var(--laranja);
+    font-weight: 800;
+
+
+}
+.lista-menu__link{
+
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
 }

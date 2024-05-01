@@ -1,11 +1,21 @@
 @import url("/HTML\ e\ CSS\ -\ Mobile\ First/alurabooks/styles/header.css"); /* importar outra folha de estilo, dessa forma não precisa ficar chamando  no index um monte de link html  */
+@import url("/HTML\ e\ CSS\ -\ Mobile\ First/alurabooks/styles/baner.css");
+@import url("/HTML\ e\ CSS\ -\ Mobile\ First/alurabooks/styles/carrossel.css");
+
 :root{
 
     --cor-de-fundo: #ebecee;
     --branco: #fff;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
 
 }
 body{
 
     background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+
 }
