@@ -35,3 +35,18 @@
 
 
 }
+@media screen and (min-width: 1024px){
+
+    .baner__titulo{
+
+        font-size: 2.5rem;
+
+    }
+    .baner__pesquisa{
+        width: 50%;
+    }
+    .baner__pesquisa::placeholder{
+        background-position: 7em;
+    }
+    
+}
