@@ -13,7 +13,7 @@ async function buscarVideo(){
         lista.removeChild(lista.firstChild);
     }
 
-    busca.forEach(element => lista.appendChild(element));dChild(constroiCard(element.titulo, element.descricao, element.url, element.imagem))
+    busca.forEach(element => lista.appendChild(constroiCard(element.titulo, element.descricao, element.url, element.imagem)));
  
     if(busca.length == 0){
         lista.innerHTML = `<h2 class= "mensagem__titulo" >Nenhum vídeo encontrado</h2>`;
