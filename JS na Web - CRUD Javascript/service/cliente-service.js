@@ -43,8 +43,22 @@ const criaCliente = ( nome, email) => {
  .then(response => response.json())
 }
 
+const removeCliente = (id) => {
+  return fetch(`http://localhost:3000/profile/${id}`, {
+    method: "DELETE"
+  })
+ .then(response => response.json())
+}
+const detalhaCliente = (id) => {
+
+  return fetch(`http://localhost:3000/profile/${id}`)
+  
+ .then(response => response.json())
+
+}
 // Export deixa visivel para outros arquivos que queiram acessar a função
 export const clienteService ={
   listaClientes,
-  criaCliente
+  criaCliente,
+  removeCliente
 };
