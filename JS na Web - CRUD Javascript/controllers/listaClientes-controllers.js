@@ -1,3 +1,5 @@
+import { clienteService } from "../service/cliente-service.js";
+
 const criarNovaLinha = (nome, email) => {
     const linhaNovoCliente = document.createElement("tr");
     const conteudo = `<td class="td" data-td>${nome}</td>
@@ -13,3 +15,12 @@ const criarNovaLinha = (nome, email) => {
     return linhaNovoCliente;
   };
 const tabela = document.querySelector("[data-tabela]");
+
+// Recebe dados da api e retorna
+clienteService.listaClientes()
+.then(data => {
+  data.forEach(element => {
+    tabela.appendChild(criarNovaLinha(element.nome, element.email));
+    
+  });
+});
