@@ -8,3 +8,7 @@
 - Para ativar o ambiente venv é necessário usar o comando: venv\Scripts\activate
 - pip é o gerenciador de pacotes e serviços do python, já vem instalado por padrão.
 - pip freeze  é usado para gerar uma lista de todas as bibliotecas instaladas em seu ambiente virtual, juntamente com suas versões. Esse comando é particularmente útil para criar um arquivo requirements.txt, que pode ser usado para replicar o mesmo ambiente de desenvolvimento em outra máquina.
+- o modulo uvicorn serve como um servidor ppara aplicações python 
+- pip freeze > requirements.txt serve para ir salvando as dependencias de cada modulo
+- o comando uvicorn serve nomedoarquivo:app --reload (levanta o servidor local)
+- usar a rota padrao /docs mostra todas as rotas feitas, nela sao registradas todas as documentações criadas usando o doc string
