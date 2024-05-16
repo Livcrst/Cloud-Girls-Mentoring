@@ -1,0 +1,10 @@
+- Venv é um ambiente virtual python que garante que tenhamos a versão de linguagem e framework que usaremos em um projeto, garantindo que teremos as mesmas versões por todas as pessoaas que trabalhem no projeto.
+- A convenção é chamar de Env ou Venv.
+- Na pasta include temos todos os cabeçaalhos e coisas por padrão (moudlos em C)
+- Na lib é salvo todas as dependenciaas instaladas para o projeto. (modulos do ppython)
+- Scripts guarda scripts e executados deste ambiente virtual.
+- pyvenv é um arquivo de configurações com a versão do python e etc.
+- a ativação do ambiente virtual deppende do sistema opperaacional, com isso escolher a oção correta de ativaçãao.
+- Para ativar o ambiente venv é necessário usar o comando: venv\Scripts\activate
+- pip é o gerenciador de pacotes e serviços do python, já vem instalado por padrão.
+- pip freeze  é usado para gerar uma lista de todas as bibliotecas instaladas em seu ambiente virtual, juntamente com suas versões. Esse comando é particularmente útil para criar um arquivo requirements.txt, que pode ser usado para replicar o mesmo ambiente de desenvolvimento em outra máquina.
